@@ -25,13 +25,22 @@ public class ConsoleExercises {
 //
 //What happens if you enter less than 3 words?
 //What happens if you enter more than 3 words?
+//        Scanner scanner = new Scanner(System.in);
+//        System.out.println("Enter 3 words ");
+//        String userIn = scanner.next();
+//        String userIn2 = scanner.next();
+//        String userIn3 = scanner.next();
+//        System.out.println(userIn +" "+ userIn3 +" "+ userIn2);
+
+//          Prompt the user to enter values of length and width of a classroom at Codeup (or your room if virtual).
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Enter 3 words ");
-        String userIn = scanner.next();
-        String userIn2 = scanner.next();
-        String userIn3 = scanner.next();
-        System.out.println(userIn +" "+ userIn3 +" "+ userIn2);
-
-
+        System.out.println("Please enter the length and width");
+        String length = scanner.nextLine();
+        String width = scanner.nextLine();
+        int widthparsed = Integer.parseInt(width);
+        int lengthparsed = Integer.parseInt(length);
+        int area = widthparsed * lengthparsed;
+        int perimeter = (widthparsed * 2) + (lengthparsed * 2);
+        System.out.println("The area is "+ area + " The perimeter is " + perimeter);
     }
 }
