@@ -100,11 +100,13 @@ public class ControlFlowExercises {
             Scanner scanner2 = new Scanner(System.in);
             System.out.println("Please enter next integer");
             int nextnum = scanner2.nextInt();
+
+            System.out.println();
+            System.out.println(" Here is your table");
+            System.out.println("Number | squared | cubed |");
+            System.out.println("------ | ------- | ------| ");
             for (int i = 1; i <= nextnum; i++) {
-                System.out.println();
-                System.out.println(" Here is your table");
-                System.out.println("Number | squared | cubed |");
-                System.out.println("------ | ------- | ------| ");
+
                 System.out.println(i + "      | " + (i * i) + "        | " + (i * i * i));
             }
 
