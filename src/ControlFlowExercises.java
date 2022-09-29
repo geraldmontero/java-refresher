@@ -57,7 +57,7 @@ public class ControlFlowExercises {
 //For numbers which are multiples of both three and five: print “FizzBuzz”.
 
         for (int i = 1; i <= 100; i++) {
-            if ((i % 3 == 0) &&( i % 5 == 0)) {
+            if ((i % 3 == 0) && (i % 5 == 0)) {
                 System.out.println("fizzBuzz");
             } else if (i % 5 == 0) {
                 System.out.println("buzz");
@@ -76,16 +76,39 @@ public class ControlFlowExercises {
 //Only continue if the user agrees to.
 
         Scanner scanner = new Scanner(System.in);
-        System.out.println("please enter and integer");
+        System.out.println("please enter an integer");
         int userNum = scanner.nextInt();
 
+        System.out.println();
+        System.out.println(" Here is your table");
+        System.out.println("Number | squared | cubed |");
+        System.out.println("------ | ------- | ------| ");
+
+
+        for (int i = 1; i <= userNum; i++) {
+
+            System.out.println(i + "      | " + (i * i) + "        | " + (i * i * i));
+        }
+
         System.out.println("continue y or n");
-        String userin = scanner.next();
+        String userIn = scanner.next();
+        if (!userIn.equals("y")) {
+            System.out.println("goodbye");
 
 
+        } else {
+            Scanner scanner2 = new Scanner(System.in);
+            System.out.println("Please enter next integer");
+            int nextnum = scanner2.nextInt();
+            for (int i = 1; i <= nextnum; i++) {
+                System.out.println();
+                System.out.println(" Here is your table");
+                System.out.println("Number | squared | cubed |");
+                System.out.println("------ | ------- | ------| ");
+                System.out.println(i + "      | " + (i * i) + "        | " + (i * i * i));
+            }
 
 
-
-
+        }
     }
 }
