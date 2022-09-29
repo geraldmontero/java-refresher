@@ -66,5 +66,26 @@ public class ControlFlowExercises {
 
             }
         }
+
+//        Display a table of powers.
+//
+//Prompt the user to enter an integer.
+//Display a table of squares and cubes from 1 to the value entered.
+//Ask if the user wants to continue.
+//Assume that the user will enter valid data.
+//Only continue if the user agrees to.
+
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("please enter and integer");
+        int userNum = scanner.nextInt();
+
+        System.out.println("continue y or n");
+        String userin = scanner.next();
+
+
+
+
+
+
     }
 }
