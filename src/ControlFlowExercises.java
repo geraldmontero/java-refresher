@@ -128,14 +128,12 @@ public class ControlFlowExercises {
 //F : 59 - 0
 
         Scanner scanner3 = new Scanner(System.in);
+
+        boolean userAn = Boolean.parseBoolean(scanner3.nextLine());
         do {
-
-
-
             System.out.println("please enter a grade bettween 0-100");
 
         int userint = scanner3.nextInt();
-        boolean userAn = Boolean.parseBoolean(scanner3.nextLine());
         if (userint > 0 && userint < 59){
             System.out.println("f");
             System.out.println("do you want to continue");
@@ -149,7 +147,6 @@ public class ControlFlowExercises {
         }else if (userint > 87 && userint <= 100){
             System.out.println("a");
         }
-
 
         }while(userAn);
 
